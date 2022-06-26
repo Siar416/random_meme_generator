@@ -143,5 +143,10 @@ table {
   margin-right: 1.875rem;
 }
 
-
+.container {
+  background-color: lightgrey;
+  max-width: 1400px;
+  height: 800px;
+  margin: 0 auto;
+}
 
