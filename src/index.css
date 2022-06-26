@@ -150,3 +150,7 @@ table {
   margin: 0 auto;
 }
 
+.current_img {
+  width: 550px;
+  height: 550px;
+}

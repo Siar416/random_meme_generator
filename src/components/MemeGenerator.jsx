@@ -8,12 +8,17 @@ function MemeGenerator() {
   useEffect(() => {
     axios.get("https://api.imgflip.com/get_memes").then((res) => {
       setMemeArray(res.data.data.memes);
+      setCurrentMeme(res.data.data.memes[1]);
     });
   }, []);
 
   return (
     <div className="container">
-      <h1>Meme</h1>
+      <div className="img_container">
+        {currentMeme && (
+          <img className="current_img" src={currentMeme.url} alt="meme image" />
+        )}
+      </div>
     </div>
   );
 }
