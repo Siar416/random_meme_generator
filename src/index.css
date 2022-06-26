@@ -148,9 +148,27 @@ table {
   max-width: 1400px;
   height: 800px;
   margin: 0 auto;
+  display: flex;
+  
 }
 
 .current_img {
   width: 550px;
   height: 550px;
+}
+
+.input_container {
+  justify-self: center;
+  margin: 150px auto;
+}
+
+.text_area {
+  border-radius: 10px;
+  margin-top: 50px;
+  height: 50px;
+  width: auto;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
 }

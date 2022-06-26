@@ -19,6 +19,23 @@ function MemeGenerator() {
           <img className="current_img" src={currentMeme.url} alt="meme image" />
         )}
       </div>
+
+      <div className="input_container">
+        <div>
+          <input
+            className="text_area"
+            type="text"
+            placeholder="Enter Top Area Text"
+          />
+        </div>
+        <div>
+          <input
+            className="text_area"
+            type="text"
+            placeholder="Bottom Area Text"
+          />
+        </div>
+      </div>
     </div>
   );
 }
