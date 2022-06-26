@@ -153,13 +153,14 @@ table {
 }
 
 .current_img {
-  width: 550px;
-  height: 550px;
+  width: 650px;
+  height: 650px;
 }
 
 .input_container {
-  justify-self: center;
   margin: 150px auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .text_area {
@@ -167,8 +168,18 @@ table {
   margin-top: 50px;
   height: 50px;
   width: auto;
+  border: 0px;
 }
 
 ::-webkit-input-placeholder {
   text-align: center;
 }
+
+.btn {
+  border-radius: 10px;
+  margin-top: 50px;
+  height: 50px;
+  width: auto;
+}
+
+

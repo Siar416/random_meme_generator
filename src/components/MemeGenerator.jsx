@@ -4,6 +4,8 @@ import axios from "axios";
 function MemeGenerator() {
   const [memeArray, setMemeArray] = useState([]);
   const [currentMeme, setCurrentMeme] = useState(null);
+  const [topText, setTopText] = useState("");
+  const [bottomText, setBottomText] = useState("");
 
   useEffect(() => {
     axios.get("https://api.imgflip.com/get_memes").then((res) => {
@@ -13,7 +15,7 @@ function MemeGenerator() {
   }, []);
 
   return (
-    <div className="container">
+    <form className="container">
       <div className="img_container">
         {currentMeme && (
           <img className="current_img" src={currentMeme.url} alt="meme image" />
@@ -35,8 +37,9 @@ function MemeGenerator() {
             placeholder="Bottom Area Text"
           />
         </div>
+        <button className="btn">Generate</button>
       </div>
-    </div>
+    </form>
   );
 }
 
