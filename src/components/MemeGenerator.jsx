@@ -8,10 +8,15 @@ function MemeGenerator() {
   const [bottomText, setBottomText] = useState("");
 
   useEffect(() => {
-    axios.get("https://api.imgflip.com/get_memes").then((res) => {
-      setMemeArray(res.data.data.memes);
-      setCurrentMeme(res.data.data.memes[1]);
-    });
+    axios
+      .get("https://api.imgflip.com/get_memes")
+      .then((res) => {
+        setMemeArray(res.data.data.memes);
+        setCurrentMeme(res.data.data.memes[1]);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   }, []);
 
   const handleClick = (e) => {
