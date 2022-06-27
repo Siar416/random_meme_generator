@@ -137,9 +137,12 @@ table {
   line-height: 8rem;
   font-size: 3rem;
   font-family: 'Titon One', cursive;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
-  filter: drop-shadow(0px 10px 3px black);
+  border-bottom-left-radius: 1.5625rem;
+  border-bottom-right-radius: 1.5625rem;
+  filter: drop-shadow(0rem .625rem .1875rem black);
+  color: white;
+  -webkit-text-stroke-width: .125rem;
+  -webkit-text-stroke-color: black;
 }
 
 .meme_img {
@@ -147,34 +150,34 @@ table {
 }
 
 .container {
-  max-width: 1400px;
-  height: 728px;
+  max-width: 87.5rem;
+  height: 45.5rem;
   margin: 0 auto;
   display: flex;
-  margin-top: 50px;
+  margin-top: 3.125rem;
 }
 
 .current_img {
-  width: 650px;
-  height: 650px;
-  border-radius: 10px;
-  filter: drop-shadow(0px 10px 3px black);
+  width: 40.625rem;
+  height: 40.625rem;
+  border-radius: .625rem;
+  filter: drop-shadow(0rem .625rem .1875rem black);
 }
 
 .input_container {
-  margin: 150px auto;
+  margin: 9.375rem auto;
   display: flex;
   flex-direction: column;
-  height: 430px;
-  padding: 35px;
-  border-radius: 20px;
-  filter: drop-shadow(0px 10px 3px black);
+  height: 26.875rem;
+  padding: 2.1875rem;
+  border-radius: 1.25rem;
+  filter: drop-shadow(0rem .625rem .1875rem black);
 }
 
 .text_area {
-  border-radius: 10px;
-  margin-top: 50px;
-  height: 50px;
+  border-radius: .625rem;
+  margin-top: 3.125rem;
+  height: 3.125rem;
   width: auto;
 }
 
@@ -183,9 +186,9 @@ table {
 }
 
 .btn {
-  border-radius: 10px;
-  margin-top: 50px;
-  height: 50px;
+  border-radius: .625rem;
+  margin-top: 3.125rem;
+  height: 3.125rem;
   width: auto;
   font-family: 'Titon One', cursive;
   font-size: 1.5rem;
@@ -198,25 +201,31 @@ table {
 
 .text_top {
   position: absolute;
-  left: 55px;
-  top: 35px;
+  left: 3.4375rem;
+  top: 2.1875rem;
   font-family: 'Titon One', cursive;
   font-size: 2rem;
   font-weight: 900;
-  max-width: 540px;
+  max-width: 33.75rem;
   overflow-wrap: break-word;
   z-index: 999;
+  color: white;
+  -webkit-text-stroke-width: .125rem;
+  -webkit-text-stroke-color: black;
 }
 
 .text_bottom {
   position: absolute;
-  left: 55px;
-  top: 575px;
+  left: 3.4375rem;
+  top: 35.9375rem;
   font-family: 'Titon One', cursive;
   font-size: 2rem;
   font-weight: 900;
-  max-width: 540px;
+  max-width: 33.75rem;
   overflow: hidden;
+  color: white;
+  -webkit-text-stroke-width: .125rem;
+  -webkit-text-stroke-color: black;
 }
 
 .footer {
@@ -226,9 +235,9 @@ table {
   background-color: lightblue;
   line-height: 6rem;
   font-size: 1rem;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-  filter: drop-shadow(15px 0px 10px black);
+  border-top-left-radius: 1.5625rem;
+  border-top-right-radius: 1.5625rem;
+  filter: drop-shadow(.9375rem 0rem .625rem black);
   font-family: 'Titon One', cursive;
   font-size: 1.5rem;
 }

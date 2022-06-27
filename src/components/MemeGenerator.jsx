@@ -16,15 +16,17 @@ function MemeGenerator() {
 
   const handleClick = (e) => {
     e.preventDefault();
-
     let randomNum = Math.floor(Math.random() * memeArray.length);
     let randomImg = memeArray[randomNum];
     setCurrentMeme(randomImg);
+    setTopText("");
+    setBottomText("");
   };
 
   return (
     <>
       <form className="container">
+        {!currentMeme && <h1>Loading image...</h1>}
         <div className="img_container">
           <p className="text_top">{topText}</p>
           {currentMeme && (
