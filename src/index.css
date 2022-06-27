@@ -137,6 +137,9 @@ table {
   line-height: 8rem;
   font-size: 3rem;
   font-family: 'Titon One', cursive;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  filter: drop-shadow(0px 10px 3px black);
 }
 
 .meme_img {
@@ -144,23 +147,28 @@ table {
 }
 
 .container {
-  background-color: lightgrey;
   max-width: 1400px;
   height: 800px;
   margin: 0 auto;
   display: flex;
-  
+  margin-top: 50px;
 }
 
 .current_img {
   width: 650px;
   height: 650px;
+  border-radius: 10px;
+  filter: drop-shadow(0px 10px 3px black);
 }
 
 .input_container {
   margin: 150px auto;
   display: flex;
   flex-direction: column;
+  height: 430px;
+  padding: 35px;
+  border-radius: 20px;
+  filter: drop-shadow(0px 10px 3px black);
 }
 
 .text_area {
@@ -168,7 +176,6 @@ table {
   margin-top: 50px;
   height: 50px;
   width: auto;
-  border: 0px;
 }
 
 ::-webkit-input-placeholder {
@@ -180,6 +187,9 @@ table {
   margin-top: 50px;
   height: 50px;
   width: auto;
+  font-family: 'Titon One', cursive;
+  font-size: 1.5rem;
+  background-color: lightgreen;
 }
 
 .img_container {
@@ -190,12 +200,24 @@ table {
   position: absolute;
   left: 55px;
   top: 35px;
+  font-family: 'Titon One', cursive;
+  font-size: 2rem;
+  font-weight: 900;
+  max-width: 540px;
+  overflow-wrap: break-word;
 }
 
 .text_bottom {
   position: absolute;
   left: 55px;
   top: 575px;
+  font-family: 'Titon One', cursive;
+  font-size: 2rem;
+  font-weight: 900;
+  max-width: 540px;
+  overflow: hidden;
 }
+
+
 
 

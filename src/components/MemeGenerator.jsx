@@ -14,10 +14,13 @@ function MemeGenerator() {
     });
   }, []);
 
-  // const handleChange = (e) => {
-  //   setTopText(e.target.value);
-  //   setBottomText(e.target.value);
-  // };
+  const handleClick = (e) => {
+    e.preventDefault();
+
+    let randomNum = Math.floor(Math.random() * memeArray.length);
+    let randomImg = memeArray[randomNum];
+    setCurrentMeme(randomImg);
+  };
 
   return (
     <form className="container">
@@ -48,7 +51,9 @@ function MemeGenerator() {
             placeholder="Bottom Area Text"
           />
         </div>
-        <button className="btn">Generate</button>
+        <button onClick={(e) => handleClick(e)} className="btn">
+          Generate
+        </button>
       </div>
     </form>
   );
