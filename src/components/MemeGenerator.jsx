@@ -23,39 +23,41 @@ function MemeGenerator() {
   };
 
   return (
-    <form className="container">
-      <div className="img_container">
-        <p className="text_top">{topText}</p>
-        {currentMeme && (
-          <img className="current_img" src={currentMeme.url} alt="meme image" />
-        )}
-        <p className="text_bottom">{bottomText}</p>
-      </div>
+    <>
+      <form className="container">
+        <div className="img_container">
+          <p className="text_top">{topText}</p>
+          {currentMeme && (
+            <img className="current_img" src={currentMeme.url} alt="meme" />
+          )}
+          <p className="text_bottom">{bottomText}</p>
+        </div>
 
-      <div className="input_container">
-        <div>
-          <input
-            className="text_area"
-            type="text"
-            value={topText}
-            onChange={(e) => setTopText(e.target.value)}
-            placeholder="Enter Top Area Text"
-          />
+        <div className="input_container">
+          <div>
+            <input
+              className="text_area"
+              type="text"
+              value={topText}
+              onChange={(e) => setTopText(e.target.value)}
+              placeholder="Enter Top Area Text"
+            />
+          </div>
+          <div>
+            <input
+              className="text_area"
+              value={bottomText}
+              onChange={(e) => setBottomText(e.target.value)}
+              type="text"
+              placeholder="Bottom Area Text"
+            />
+          </div>
+          <button onClick={(e) => handleClick(e)} className="btn">
+            Generate
+          </button>
         </div>
-        <div>
-          <input
-            className="text_area"
-            value={bottomText}
-            onChange={(e) => setBottomText(e.target.value)}
-            type="text"
-            placeholder="Bottom Area Text"
-          />
-        </div>
-        <button onClick={(e) => handleClick(e)} className="btn">
-          Generate
-        </button>
-      </div>
-    </form>
+      </form>
+    </>
   );
 }
 
