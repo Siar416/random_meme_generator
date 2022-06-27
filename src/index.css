@@ -155,6 +155,7 @@ table {
   margin: 0 auto;
   display: flex;
   margin-top: 3.125rem;
+
 }
 
 .current_img {
@@ -240,6 +241,9 @@ table {
   filter: drop-shadow(.9375rem 0rem .625rem black);
   font-family: 'Titon One', cursive;
   font-size: 1.5rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 
