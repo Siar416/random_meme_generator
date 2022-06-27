@@ -8,7 +8,7 @@ Utilized axios to make API call, along with postman to test endpoint.
 
 ## Screen Shot
 
-![App screen shot](src/assets/random_meme_generator_imgJPG)
+![App screen shot](src\assets\random_meme_generator_img.JPG)
 
 ## Installation
 
