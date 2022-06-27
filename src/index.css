@@ -182,4 +182,20 @@ table {
   width: auto;
 }
 
+.img_container {
+  position: relative;
+}
+
+.text_top {
+  position: absolute;
+  left: 55px;
+  top: 35px;
+}
+
+.text_bottom {
+  position: absolute;
+  left: 55px;
+  top: 575px;
+}
+
 

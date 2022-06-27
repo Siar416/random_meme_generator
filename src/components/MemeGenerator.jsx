@@ -14,12 +14,19 @@ function MemeGenerator() {
     });
   }, []);
 
+  // const handleChange = (e) => {
+  //   setTopText(e.target.value);
+  //   setBottomText(e.target.value);
+  // };
+
   return (
     <form className="container">
       <div className="img_container">
+        <p className="text_top">{topText}</p>
         {currentMeme && (
           <img className="current_img" src={currentMeme.url} alt="meme image" />
         )}
+        <p className="text_bottom">{bottomText}</p>
       </div>
 
       <div className="input_container">
@@ -27,12 +34,16 @@ function MemeGenerator() {
           <input
             className="text_area"
             type="text"
+            value={topText}
+            onChange={(e) => setTopText(e.target.value)}
             placeholder="Enter Top Area Text"
           />
         </div>
         <div>
           <input
             className="text_area"
+            value={bottomText}
+            onChange={(e) => setBottomText(e.target.value)}
             type="text"
             placeholder="Bottom Area Text"
           />
